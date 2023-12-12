@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+}
+
+body {
+  font-size: 16px;
+  background-color: #e5eff5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  box-shadow: 1px 1px 20px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+}
+
+.container .top {
+  padding: 2.5rem;
+  background-color: #fff;
+}
+.container .top h1 {
+  color: #2ab2af;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+.container .top h2 {
+  color: #c0df34;
+  font-size: 1.2rem;
+  margin-bottom: 0.6rem;
+}
+.container .top p {
+  color: #98a6bd;
+  font-size: 0.9rem;
+  line-height: 1.6rem;
+  font-weight: 400;
+}
+
+.container .bottom {
+  color: #fff;
+  display: flex;
+}
+
+.container .bottom .left-col {
+  padding: 2.5rem;
+  flex: 1;
+  background-color: #2ab2af;
+}
+.container .bottom .left-col #price {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 0.9rem;
+  color: #eee;
+  margin-bottom: 0.6rem;
+}
+.container .bottom .left-col span {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+}
+.container .bottom .left-col p {
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+button {
+  background-color: #c0df34;
+  color: #fff;
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #c0df34;
+  border-radius: 7px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+button:hover {
+  cursor: pointer;
+  opacity: 90%;
+}
+
+.container .bottom h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.container .bottom .right-col {
+  padding: 2.5rem;
+  flex: 1;
+  background-color: #4abebd;
+}
+.container .bottom .right-col ul li {
+  list-style-type: none;
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: #eee;
+  line-height: 1.2rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: #3e52a3;
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 550px;
+  }
+  .container .top,
+  .container .bottom .left-col,
+  .container .bottom .right-col {
+    padding: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  body {
+    padding: 4rem;
+  }
+  .container {
+    width: 340px;
+  }
+  .container .top,
+  .container .bottom .left-col,
+  .container .bottom .right-col {
+    padding: 1.5rem;
+  }
+  .container .bottom {
+    flex-direction: column;
+  }
+}
